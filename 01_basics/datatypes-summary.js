@@ -24,7 +24,7 @@ const heros = ["shaktiman", "naagraj", "doga"];
 
 // object declaration-1
 {
-    name: "hoshang",
+    name: "hoshang";
     age: 23
 }
 
@@ -39,3 +39,29 @@ const myFunction = function(){
 }
 
 // how to find data type => typeof
+
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++
+// +++++++++++++++++++++++++++++++++++++++++++++
+// +++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack(primitive), heap(non primitive)
+
+let myNickName = "Hope"
+
+let anotherName = myNickName
+console.log(anotherName);
+
+anotherName = "Hoshang"
+console.log(anotherName);
+
+let userOne = {
+    email: "usere@email.com",
+    upiID: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "another@email.com"// heap
