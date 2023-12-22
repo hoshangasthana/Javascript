@@ -1,5 +1,5 @@
 // array
-
+//array makes shallow copy => have same reference point, that means if i change in new array then previous array elements also gets changed
 const myArr = [0, 1, 2, 3, 4]
 const myHeros = ["SpiderMan", "BatMan", "Thor"]
 
@@ -7,6 +7,8 @@ const myArr2 = new Array(1,2,3,4,5,6,7)
 
 // console.log(myArr2[0]);
 
+
+// Array methods
 myArr.push(6);
 myArr.push(78)
 myArr.pop()
@@ -16,10 +18,11 @@ myArr.shift() // pop in front
 
 // console.log(myArr);
 
-console.log(myArr.includes(9));
-console.log(myArr.findIndex(3));
+console.log(myArr.includes(9)); // gives answer in boolean form
+console.log(myArr.findIndex(3)); // 
 
-const newArr = myArr.join()  //converts the array into comma sepreated values
+const newArr = myArr.join()  //converts the array into comma sepreated values, 
+                    //Adds all the elements of an array into a string, separated by the specified separator string.
 
 console.log(myArr);
 console.log(newArr);

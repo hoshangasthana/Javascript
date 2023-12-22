@@ -7,6 +7,7 @@
 
 
 // Object "Literals"
+// key value pair type, and jo key hai {string} and {Symbol} ki tarah declare hota hai and value can be have any data type
 const JsUser = {
     name: "Hoshang",
     "full name": "Hoshang Asthana",
@@ -27,12 +28,14 @@ const JsUser = {
 
 
 
+
+
 // //INTERVIEW QUESTION
 // // how to declare a symbol like a key in object
 // // Declaring a Symbol (one of 7 primitive data types)
 // const mySym = Symbol("key1");
 // const JsUser = {
-//     [mySym]: "key1",
+//     [mySym]: "key1",    // {symbol} type key
 //     name: "Hoshang",
 //     "full name": "Hoshang Asthana",
 //     age: 23,
@@ -53,3 +56,10 @@ JsUser.email =  "hoshang@chatgpt.com"
 console.log(JsUser["email"])
 
 
+JsUser.greeting = function(){
+    console.log("Hello JS user");
+}
+
+JsUser.greetingTwo = function(){
+    console.log("Hello JS user, ${this.name}");
+}

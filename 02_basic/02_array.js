@@ -6,7 +6,7 @@ const dc_heros = ["Batman", "Superman", "Flash"]
 //                             // gives me array of array
 //                             // so we should not push like this
 //                             // this is actually probelmatic
-// console.log(marvel_heros[3][1]) // Superman
+// console.log(marvel_heros[3][1]) // Superman  => not a good method(push)
 
 
 
